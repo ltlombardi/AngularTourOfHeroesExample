@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="src\app\app.component.css">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </None>
+    <None Update="src\app\app.component.html">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </None>
+    <None Update="src\app\app.component.spec.ts">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>
